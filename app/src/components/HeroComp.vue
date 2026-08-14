@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from 'vue';
+import { ChevronDown } from '@boxicons/vue';
 
 
 </script>
@@ -11,6 +12,8 @@ import { ref } from 'vue'
         <div class="heroTxt">
             <h1>A Console for Every Workflow</h1>
             <p>Discover the perfect console for yours.</p>
+            <ChevronDown size="2xl" 
+            id="chevIcon"/>
         </div>
     
   </section>
@@ -27,24 +30,36 @@ import { ref } from 'vue'
 
 .heroImg {
     background-image: url("https://picsum.photos/2000/3000?grayscale");
+    position: absolute;
     height: 75vh;
+    
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    top: -17vh;
-
-    
+    display: flex;
+    justify-content: center;
+     
 }
 
 .heroTxt {
     color: #ff8b68;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    
 }
+#chevIcon {
+    
+}
+
+#chevIcon:after {
+    content: '';
+    clear:both;
+}
+
 
 
 
