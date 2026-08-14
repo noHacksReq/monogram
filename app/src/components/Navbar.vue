@@ -35,6 +35,7 @@ import { ref } from 'vue'
     color: #ff8b68;
 
     border-radius: 2px;
+    z-index: 10;
 }
 
 .navbar-list {
