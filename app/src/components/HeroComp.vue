@@ -7,15 +7,12 @@ import { ChevronDown } from '@boxicons/vue';
 
 <template>
   <section class="heroImg">
-    
-        
         <div class="heroTxt">
             <h1>A Console for Every Workflow</h1>
             <p>Discover the perfect console for yours.</p>
             <ChevronDown size="2xl" 
             id="chevIcon"/>
         </div>
-    
   </section>
 
  
@@ -24,7 +21,7 @@ import { ChevronDown } from '@boxicons/vue';
 <style>
 
 * {
-    outline: 1px solid red;
+    
 }
 
 
