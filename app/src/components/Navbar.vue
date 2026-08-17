@@ -23,7 +23,7 @@ import { ref } from 'vue'
 <style>
 
 * {
-    outline: 1px solid red;
+    
 }
 
 .navbar {
