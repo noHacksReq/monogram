@@ -6,7 +6,9 @@ import { ref } from 'vue'
 
 <template>
   <section class="navbar">
-    <a id="monogram" href="#####">Monogram</a>
+    <a id="monogram"
+    data-test="monogram"
+    href="#####">Monogram</a>
     <ul class="navbar-list">
         <li>how it works</li>
         <li>workflows</li>
