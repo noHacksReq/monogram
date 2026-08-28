@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "This is the Monogram shop page from frontendpractice.com",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "App.vue"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noHacksReq/monogram.git"
@@ -18,7 +20,8 @@
   "homepage": "https://github.com/noHacksReq/monogram#readme",
   "devDependencies": {
     "@playwright/test": "^1.62.1",
-    "@types/node": "^26.3.0"
+    "@types/node": "^26.3.0",
+    "typescript": "^7.0.2"
   },
   "dependencies": {
     "@boxicons/vue": "^1.0.1"
