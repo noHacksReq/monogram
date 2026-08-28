@@ -4,7 +4,7 @@
   "description": "This is the Monogram shop page from frontendpractice.com",
   "main": "index.js",
   "scripts": {
-    "start": "app/src/App.vue"
+    "start": "vite"
   },
   "repository": {
     "type": "git",
