@@ -4,7 +4,8 @@
   "description": "This is the Monogram shop page from frontendpractice.com",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
