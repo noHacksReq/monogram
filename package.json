@@ -4,9 +4,9 @@
   "description": "This is the Monogram shop page from frontendpractice.com",
   "main": "index.js",
   "scripts": {
-    
     "test:e2e": "playwright test",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "dev": "vite --port 3000"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,8 @@
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@types/node": "^26.3.0",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
   },
   "dependencies": {
     "@boxicons/vue": "^1.0.1"
