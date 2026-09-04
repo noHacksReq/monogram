@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
 
 
-//making a change to check CICD
+
 </script>
 
 <template>
