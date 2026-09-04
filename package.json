@@ -1,0 +1,23 @@
+{
+  "name": "monogram",
+  "version": "1.0.0",
+  "description": "This is the Monogram shop page from frontendpractice.com",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noHacksReq/monogram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/noHacksReq/monogram/issues"
+  },
+  "homepage": "https://github.com/noHacksReq/monogram#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.1"
+  }
+}
