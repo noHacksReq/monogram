@@ -72,7 +72,7 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'vite',
+    command: 'npm run build && npm run preview',
     url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
     stdout: 'ignore',
