@@ -5,9 +5,12 @@ import { ref } from 'vue'
 </script>
 
 <template>
-  <section class="navbar">
-    <a id="monogram" href="#####">Monogram</a>
-    <ul class="navbar-list">
+  <section class="navbar"
+  data-test="header">
+    <a id="monogram" href="https://www.frontendpractice.com/projects/monogram" target="_blank"
+    data-test="monogramLink">Monogram</a>
+    <ul class="navbar-list"
+    data-test="navbar-list">
         <li>how it works</li>
         <li>workflows</li>
         <li>blog</li>
