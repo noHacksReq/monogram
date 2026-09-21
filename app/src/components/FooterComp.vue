@@ -15,7 +15,8 @@ import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
     </div>
   </footer>
 
-  <footer class="mainFooter">
+  <footer class="mainFooter"
+  data-test="mainFooter">
     <div class="monoInfo">
       <div class="address">
         <p>MONOGRAM</p>
