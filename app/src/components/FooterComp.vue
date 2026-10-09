@@ -15,9 +15,13 @@ import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
     </div>
   </footer>
 
-  <footer class="mainFooter">
-    <div class="monoInfo">
-      <div class="address">
+  <footer class="mainFooter"
+  data-test="mainFooter"
+  title="mainFooter">
+    <div class="monoInfo"
+    data-test='monoInfo'>
+      <div class="address"
+      data-test="address">
         <p>MONOGRAM</p>
       <address>
         305 King St. W.
