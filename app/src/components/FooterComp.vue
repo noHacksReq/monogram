@@ -21,8 +21,9 @@ import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
     <div class="monoInfo"
     data-test='monoInfo'>
       <div class="address"
-      data-test="address">
-        <p>MONOGRAM</p>
+      data-testid="address">
+        <p data-testid="addressTitle"
+        >MONOGRAM</p>
       <address>
         305 King St. W.
         <br>
