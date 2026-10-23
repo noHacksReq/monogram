@@ -15,11 +15,23 @@ test.describe('Footer Tests', ():void => {
    
     test('Verify Footer Loads', async( { page }) => {
         const locator = new LocatorPage(page);
+        await test.step('verify footer loads', async () => {
+           
+            await  expect(locator.mainFooter).toBeVisible();
+            console.log("main footer has loaded")
+        })
+
+        await test.step('verify address field', async () => {
+            await page.pause();
+        //verify address field
+        await expect(locator.addressField).toBeVisible();
+        await expect(locator.addressTitle).toBeVisible();
         
-        await expect(locator.mainFooter).toBeVisible();
+        await page.pause();
+
+        })
         
-        
-        
-    })
+        });
+
 
 });
