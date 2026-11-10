@@ -24,7 +24,7 @@ import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
       data-testid="address">
         <p data-testid="addressTitle"
         >MONOGRAM</p>
-      <address>
+      <address data-testid="addressField">
         305 King St. W.
         <br>
         Suite 502
