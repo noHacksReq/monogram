@@ -34,9 +34,11 @@ import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
         Canada
       </address>
       </div>
-      <div class="quickLinks">
+      <div class="quickLinks"
+      data-testid="quickLinks">
         <p>QUICK LINKS</p>
-        <ul>
+        <ul
+        data-testid="quickLinksLi">
           <li>
             <a>Home</a>
           </li>
@@ -65,9 +67,11 @@ import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
           </li>
         </ul>
       </div>
-      <div class="info">
+      <div class="info"
+      data-testid="infoCont">
         <p>INFORMATION</p>
-        <ul>
+        <ul
+        data-testid="infoList">
           <li>
             <a>About Us</a>
           </li>

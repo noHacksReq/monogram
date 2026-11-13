@@ -35,13 +35,32 @@ test.describe('Footer Tests', ():void => {
         });
 
         await test.step('Verify quick links', async() => {
-            await page.pause();
             await expect(locator.quickLinks).toBeVisible();
             await expect(locator.homeLink).toBeVisible();
             await expect(locator.howItWorksLink).toBeVisible();
             await expect(locator.shopLink).toBeVisible();
             await expect(locator.downloadLink).toBeVisible();
             console.log('Quick Links have loaded');
+        });
+
+        await test.step('verify help list', async() => {
+            await expect(locator.helpList).toBeVisible();
+            await expect(locator.FAQ).toBeVisible();
+            await expect(locator.supportCent).toBeVisible();
+            await expect(locator.shipNSales).toBeVisible();
+            console.log('Help list has loaded')
+        });
+
+        await test.step('verify info list', async() => {
+            
+            await expect(locator.infoContainer).toBeVisible();
+            await expect(locator.aboutUs).toBeVisible();
+            await expect(locator.workWus).toBeVisible();
+            await expect(locator.privacy).toBeVisible();
+            await expect(locator.termsOfUse).toBeVisible();
+            await expect(locator.termsOfSale).toBeVisible();
+            await expect(locator.pressKit).toBeVisible();
+            console.log('Info list has loaded')
         })
         
     });
