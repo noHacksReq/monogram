@@ -62,6 +62,22 @@ test.describe('Footer Tests', ():void => {
             await expect(locator.pressKit).toBeVisible();
             console.log('Info list has loaded')
         })
+
+        await test.step('verify subscribe section', async() => {
+            
+            await expect(locator.subscribeCont).toBeVisible();
+            await expect(locator.subscribeTitle).toBeVisible();
+            await expect(locator.subscribeMsg).toBeVisible();
+            await expect(locator.subscribeEmailField).toBeVisible();
+            await expect(locator.subscribeEmailBtn).toBeVisible();
+            await expect(locator.camIcon).toBeVisible();
+            await expect(locator.twitIcon).toBeVisible();
+            await expect(locator.fbIcon).toBeVisible();
+            await expect(locator.ytIcon).toBeVisible();
+            await expect(locator.copyright).toBeVisible();
+
+            console.log('Subscribe section has loaded');
+        })
         
     });
 

@@ -92,7 +92,8 @@ import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
           </li>
         </ul>
       </div>
-      <div class="subscribe">
+      <div class="subscribe"
+      data-testid="subscribeFooter">
         <p>SUBSCRIBE TO MONOGRAM</p>
         <p>Master productivity with Creative Console and get all the latest Monogram news.</p>
           <div class="formRow">
@@ -107,30 +108,30 @@ import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
           </div>
           <div class="soclialLinks">
               <ul class="socialList">
-            <li>
+            <li >
               <a src="https://www.instagram.com/?hl=en">
-                <Camera/>
+                <Camera data-testid="camIcon"/>
               </a>
             </li>
-            <li>
+            <li >
               <a src="https://x.com/">
-                <BirdAlt />
+                <BirdAlt data-testid="twitIcon"/>
               </a>
             </li>
             <li>
               <a src="https://www.facebook.com/">
-                <Pacman />
+                <Pacman data-testid="fbIcon"/>
               </a>
             </li>
             <li>
               <a src="https://www.youtube.com/">
-                <Play />
+                <Play data-testid="ytIcon"/>
               </a>
             </li>
               </ul>
             </div>
             <div class="copywright">
-              <p>&copy; Monocgram 2026 </p>
+              <p data-testid="copyright">&copy; Monocgram 2026 </p>
             </div>
         </div>
         
@@ -181,6 +182,7 @@ import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
 
 .socialList {
   display: flex;
+  list-style: none;
 }
 
 

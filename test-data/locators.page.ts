@@ -27,6 +27,18 @@ export class LocatorPage {
     readonly termsOfUse: Locator;
     readonly termsOfSale: Locator;
     readonly pressKit: Locator;
+    //subscribe section
+    readonly subscribe: Locator;
+    readonly subscribeTitle: Locator;
+    readonly subscribeMsg: Locator;
+    readonly subscribeEmailField: Locator;
+    readonly subscribeEmailBtn: Locator;
+    readonly camIcon: Locator;
+    readonly twitIcon: Locator;
+    readonly fbIcon: Locator;
+    readonly ytIcon: Locator;
+    readonly copyright: Locator;
+
 
     constructor(page: Page){
         this.page = page;
@@ -71,6 +83,20 @@ export class LocatorPage {
         .getByRole('listitem').filter({ hasText: 'Terms of Sale'});
         this.pressKit = page.getByTestId('infoList')
         .getByRole('listitem').filter({ hasText: 'Press Kit'});
+
+        //subscribe sectopn
+        this.subscribeCont = page.getByTestId('subscribeFooter');
+        this.subscribeTitle = page.getByTestId('subscribeFooter').getByText('SUBSCRIBE TO MONOGRAM');
+        this.subscribeMsg = page.getByTestId('subscribeFooter')
+        .getByText('Master productivity with Creative Console and get all the latest Monogram news.');
+        this.subscribeEmailField = page.getByPlaceholder('Email Address');
+        this.subscribeEmailBtn = page.getByRole('button', {name: 'Submit'});
+        this.camIcon = page.getByTestId('camIcon');
+        this.twitIcon = page.getByTestId('twitIcon');
+        this.fbIcon = page.getByTestId('fbIcon');
+        this.ytIcon = page.getByTestId('ytIcon');
+        this.copyright = page.getByTestId('copyright');
+
 
     }
 }
