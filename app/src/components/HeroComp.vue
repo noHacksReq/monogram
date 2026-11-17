@@ -27,7 +27,7 @@ import { ChevronDown } from '@boxicons/vue';
 
 .heroImg {
     background-image: url("https://picsum.photos/2000/3000?grayscale");
-    position: absolute;
+    position: relative;
     height: 75vh;
     
     width: 100%;

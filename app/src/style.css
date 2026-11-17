@@ -48,15 +48,22 @@
   
 }
 
+html {
+   max-width: 100%;
+  margin: 0 auto;
+  background: #eee; /* Fills the page */
+  position: relative; /* Fix for absolute positioning */
+}
+
 body {
   margin: 0;
+   max-width: 100%;
 }
 
 #app {
   
   max-width: 100%;
   margin: 0 auto;
-
   
   min-height: 100svh;
   display: flex;
