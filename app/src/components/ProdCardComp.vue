@@ -19,9 +19,12 @@ defineProps<{
             <div class="prodCard"
             data-test="prodCard">
                 <img src="https://picsum.photos/seed/picsum/550/370" alt="Product Image"/>
-                <h3 class="prodTitle">{{ prodTitle }}</h3>
-                <p class="price">{{ price }}</p>
-                <p class="prodDesc">{{ prodDesc }}</p>
+                <div class="prodText">
+                    <h3 class="prodTitle">{{ prodTitle }}</h3>
+                    <p class="price">{{ price }}</p>
+                </div>
+                    <p class="prodDesc">{{ prodDesc }}</p>
+                
             </div>
             
         
@@ -47,8 +50,19 @@ defineProps<{
    width: fit-content;
 }
 
-.prodTitle, .prodDesc, .price {
+.prodText {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.price {
+    color: #6c757d;
+}
+
+.prodTitle, .prodDesc {
     color: #080b1b;
+   
 }
 
 
