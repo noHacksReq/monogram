@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-
+import ProdCardComp from './ProdCardComp.vue';
 
 
 
@@ -8,32 +8,30 @@ import { ref } from 'vue';
 </script>
 
 <template>
+    
   <section class="prodContainer">
         <div class="prod">
-            <div class="prodCard">
-                <img src="https://picsum.photos/seed/picsum/200/300" alt="Product Image"/>
-                <h3>Prod Title</h3>
-                <p>price</p>
-                <p>Item description</p>
-            </div>
-            <div class="prodCard">
-                <img src="https://picsum.photos/seed/picsum/200/300" alt="Product Image"/>
-                <h3>Prod Title</h3>
-                <p>price</p>
-                <p>Item description</p>
-            </div>
-            <div class="prodCard">
-                <img src="https://picsum.photos/seed/picsum/200/300" alt="Product Image"/>
-                <h3>Prod Title</h3>
-                <p>price</p>
-                <p>Item description</p>
-            </div>
-            <div class="prodCard">
-                <img src="https://picsum.photos/seed/picsum/200/300" alt="Product Image"/>
-                <h3>Prod Title</h3>
-                <p>price</p>
-                <p>Item description</p>
-            </div>
+            <ProdCardComp 
+            prod-title="Product 1"
+            :price=1.99
+            prod-desc="aergae aerga awrgawrg"
+            />
+            <ProdCardComp 
+            prod-title="Product 2"
+            :price=2.99
+            prod-desc="aergae aerga awrgawrg"
+            />
+            <ProdCardComp 
+            prod-title="Product 3"
+            :price=3.99
+            prod-desc="aergae aerga awrgawrg"
+            />
+            <ProdCardComp 
+            prod-title="Product 4"
+            :price=4.99
+            prod-desc="aergae aerga awrgawrg"
+            />
+            
         </div>
   </section>
 
@@ -52,7 +50,8 @@ import { ref } from 'vue';
     justify-content: center;
     position: relative;
     background-color: #f0efed;
-    width: 100%;
+    width: 77%;
+    margin: 0 auto;
 }
 
 .prod {
@@ -60,9 +59,6 @@ import { ref } from 'vue';
    flex-wrap: wrap;
 }
 
-.prodCard {
-   margin: 5px 10%;
-}
 
 
 </style>
