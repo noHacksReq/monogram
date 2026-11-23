@@ -39,6 +39,14 @@ export class LocatorPage {
     readonly ytIcon: Locator;
     readonly copyright: Locator;
 
+    //prodct section
+    readonly prodContainer: Locator;
+    readonly prodCardContainer: Locator;
+    readonly prodCard1: Locator;
+    readonly prodCard2: Locator;
+    readonly prodCard3: Locator;
+    readonly prodCard4: Locator;
+
 
     constructor(page: Page){
         this.page = page;
@@ -97,6 +105,13 @@ export class LocatorPage {
         this.ytIcon = page.getByTestId('ytIcon');
         this.copyright = page.getByTestId('copyright');
 
+        // products section
+        this.prodContainer = page.getByTestId('prodContainer');
+        this.prodCardContainer = page.getByTestId('prodCardContainer');
+        this.prodCard1 = page.getByTestId('ProdCard1');
+        this.prodCard2 = page.getByTestId('ProdCard2');
+        this.prodCard3 = page.getByTestId('ProdCard3');
+        this.prodCard4 = page.getByTestId('ProdCard4');
 
     }
 }

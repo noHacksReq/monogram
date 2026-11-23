@@ -9,24 +9,29 @@ import ProdCardComp from './ProdCardComp.vue';
 
 <template>
     
-  <section class="prodContainer">
+  <section class="prodContainer"
+  data-testid="prodContainer">
         <div class="prod">
             <ProdCardComp 
+            data-testid="ProdCard1"
             prod-title="Product 1"
             :price=1.99
             prod-desc="aergae aerga awrgawrg"
             />
             <ProdCardComp 
+             data-testid="ProdCard2"
             prod-title="Product 2"
             :price=2.99
             prod-desc="aergae aerga awrgawrg"
             />
             <ProdCardComp 
+             data-testid="ProdCard3"
             prod-title="Product 3"
             :price=3.99
             prod-desc="aergae aerga awrgawrg"
             />
             <ProdCardComp 
+             data-testid="ProdCard4"
             prod-title="Product 4"
             :price=4.99
             prod-desc="aergae aerga awrgawrg"

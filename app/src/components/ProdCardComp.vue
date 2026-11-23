@@ -7,6 +7,7 @@ defineProps<{
     prodTitle?: string
     price?: number
     prodDesc?: string 
+    
 }>()
 
 
@@ -14,10 +15,9 @@ defineProps<{
 
 <template>
   <section class="prodCardContainer"
-  data-test="prodCardContainer">
+  data-testid="prodCardContainer">
         
-            <div class="prodCard"
-            data-test="prodCard">
+            <div class="prodCard">
                 <img src="https://picsum.photos/seed/picsum/550/370" alt="Product Image"/>
                 <div class="prodText">
                     <h3 class="prodTitle">{{ prodTitle }}</h3>
