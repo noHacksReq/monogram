@@ -112,6 +112,5 @@ export class LocatorPage {
         this.prodCard2 = page.getByTestId('ProdCard2');
         this.prodCard3 = page.getByTestId('ProdCard3');
         this.prodCard4 = page.getByTestId('ProdCard4');
-
     }
 }

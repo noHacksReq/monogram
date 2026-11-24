@@ -16,25 +16,29 @@ import ProdCardComp from './ProdCardComp.vue';
             data-testid="ProdCard1"
             prod-title="Product 1"
             :price=1.99
-            prod-desc="aergae aerga awrgawrg"
+            prod-desc="Prod Card 1 description"
+            img-alt-text="Prod Card 1 image"
             />
             <ProdCardComp 
              data-testid="ProdCard2"
             prod-title="Product 2"
             :price=2.99
-            prod-desc="aergae aerga awrgawrg"
+            prod-desc="Prod Card 2 description"
+            img-alt-text="Prod Card 2 image"
             />
             <ProdCardComp 
              data-testid="ProdCard3"
             prod-title="Product 3"
             :price=3.99
-            prod-desc="aergae aerga awrgawrg"
+            prod-desc="Prod Card 3 description"
+            img-alt-text="Prod Card 3 image"
             />
             <ProdCardComp 
              data-testid="ProdCard4"
             prod-title="Product 4"
             :price=4.99
-            prod-desc="aergae aerga awrgawrg"
+            prod-desc="Prod Card 4 description"
+            img-alt-text="Prod Card 4 image"
             />
             
         </div>
