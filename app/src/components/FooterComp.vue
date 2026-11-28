@@ -1,19 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import CookieBanner from './CookieBanner.vue'
 import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
-
-
 
 </script>
 
 <template>
   
-  <footer>
-    <div class="cookieBanner">
-      <p>cookies are here, get your cookies</p>
-      <p>LEARN MORE <button>Learn More</button></p>
-    </div>
-  </footer>
+  <CookieBanner />
 
   <footer class="mainFooter"
   data-test="mainFooter"
@@ -148,30 +142,10 @@ import { Camera, BirdAlt, Pacman, Play } from '@boxicons/vue';
     
 }
 
-.cookeCont {
-  width: 100vw;
-  background-color: black;
-}
-
-.cookieBanner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #c4beb6;
-  color: #1a2456;
-  border: 1px solid black;
-
-  z-index: 100;
-}
-
 .mainFooter {
   position: sticky;
   height: 300px;
-  width: 100;
+  width: 100%;
   background-color: #1a2456;
   color: #ff8b68;
 }
